@@ -43,8 +43,8 @@ print("\n")
 print("SAVINGS ACCOUNTS TABLE")
 print(table_savings_accounts.to_string())
 
-join_step_1 = pd.merge(table_cards, table_savings_accounts, on='ts', how='outer')
-join_step_2 = pd.merge(table_accounts, join_step_1, on='ts', how='outer')
+join_step_1 = pd.merge(table_cards, table_savings_accounts, on='ts', how='outer', sort=True)
+join_step_2 = pd.merge(table_accounts, join_step_1, on='ts', how='outer', sort=True)
 
 print("\n")
 print("ANSWER NO.2")
