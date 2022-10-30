@@ -25,13 +25,17 @@ def process_json_data(filepath, dataframe, temp_df):
     for file in file_list:
         data = pd.read_json(file)
         temp_df.append(data)
-    dataframe = pd.concat(temp_df, ignore_index=False, on='ts', sort=True)
+    dataframe = pd.concat(temp_df, ignore_index=False)
 
     return dataframe
 
 table_accounts = process_json_data(data_path_accounts, dataframe_accounts, temp_df_accounts)
+table_accounts = table_accounts.sort_values(by='ts')
 table_cards = process_json_data(data_path_cards, dataframe_cards, temp_df_cards)
+table_cards = table_cards.sort_values(by='ts')
 table_savings_accounts = process_json_data(data_path_savings_accounts, dataframe_savings_accounts, temp_df_savings_accounts)
+table_savings_accounts = table_savings_accounts.sort_values(by='ts')
+
 
 print("ANSWER NO.1")
 print("ACCOUNTS TABLE")
