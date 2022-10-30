@@ -25,7 +25,7 @@ def process_json_data(filepath, dataframe, temp_df):
     for file in file_list:
         data = pd.read_json(file)
         temp_df.append(data)
-    dataframe = pd.concat(temp_df, ignore_index=False)
+    dataframe = pd.concat(temp_df, ignore_index=False, on='ts', sort=True)
 
     return dataframe
 
