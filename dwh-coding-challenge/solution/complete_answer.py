@@ -54,7 +54,7 @@ print(join_step_2.to_string())
 print("\n")
 print("ANSWER NO.3")
 print("TRANSACTION LIST:")
-print(join_step_2.iloc[[24,25,26,29,30,32,34]].to_string())
+print(join_step_2.iloc[[24,25,27,28,30,32,34]].to_string())
 print("ANALYSIS:")
 print("TRANSACTION OCCURED 7 TIMES. CREDIT USED 3 TIMES: 12000 AND 19000 ON C1, 37000 ON C2. CHANGE OF BALANCE 4 TIMES: 21000, 15000, 40000, 33000.")
 
