@@ -1,5 +1,5 @@
-# byorange-de-intern-assessment
-byOrange Data Engineer Intern Assessment
+# byorange-de-intern-assessment-submission
+byOrange Data Engineer Intern Assessment Submission
 
 Link to Solution README.md
 
