@@ -27,7 +27,7 @@ Task 3, the transaction occurred 7 times. There are 3 transaction due to credit 
 
 To display the transaction list, iloc used to display the data index where transaction occured.
 
-## How to run
+## How to run/execute
 #### 1. Get the files (choose one)
   - Create a folder on local/host computer then clone (and pull) the repo
   - Download the code straight from browser and unzip the repo folder
